@@ -39,97 +39,97 @@
     <div class="galeria">
       <div class="producto">
         <div class="producto-img">
-          <img src="imagenes/block.WEBP" alt="Bloques de cemento/concreto">
+          <img src="imagenes/block.webp" alt="Bloques de cemento/concreto">
         </div>
         <div class="producto-info">
           <h3>Bloques de cemento/concreto</h3>
           <p>Material de construcción de alta resistencia</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/viga.jpg" alt="Vigas de acero">
+          <img src="imagenes/viga.jpg" alt="Vigas de acero">
         </div>
         <div class="producto-info">
           <h3>Vigas de acero</h3>
           <p>Estructuras metálicas de soporte</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/Tubos metalicos.jpg" alt="Tubos de acero">
+          <img src="imagenes/tubos-metalicos.jpg" alt="Tubos de acero">
         </div>
         <div class="producto-info">
           <h3>Tubos de acero</h3>
           <p>Para sistemas de conducción y estructuras</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/Grava.WEBP" alt="Grava para construccion">
+          <img src="imagenes/grava.webp" alt="Grava para construccion">
         </div>
         <div class="producto-info">
           <h3>Grava para construcción</h3>
           <p>Áridos para hormigón y bases</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/Bolsa de cemento.WEBP" alt="Bolsas de cemento">
+          <img src="imagenes/bolsa-de-cemento.webp" alt="Bolsas de cemento">
         </div>
         <div class="producto-info">
           <h3>Bolsas de cemento</h3>
           <p>Cemento de alta calidad para construcción</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/Martillo Truper.jpg" alt="Martillo Truper">
+          <img src="imagenes/martillo-truper.jpg" alt="Martillo Truper">
         </div>
         <div class="producto-info">
           <h3>Martillo Truper</h3>
           <p>Herramienta de calidad profesional</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/Pala Truper.WEBP" alt="Pala Truper">
+          <img src="imagenes/pala-truper.webp" alt="Pala Truper">
         </div>
         <div class="producto-info">
           <h3>Pala Truper</h3>
           <p>Herramienta para movimiento de tierra</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/Taladro Truper.jpg" alt="Taladro Truper">
+          <img src="imagenes/taladro-truper.jpg" alt="Taladro Truper">
         </div>
         <div class="producto-info">
           <h3>Taladro Truper</h3>
           <p>Equipo eléctrico para perforación</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/Mezcladora RUBI.jpg" alt="Mezcladora RUBI">
+          <img src="imagenes/mezcladora-rubi.jpg" alt="Mezcladora RUBI">
         </div>
         <div class="producto-info">
           <h3>Mezcladora RUBI</h3>
           <p>Para preparación de morteros y hormigón</p>
         </div>
       </div>
-      
+
       <div class="producto">
         <div class="producto-img">
-          <img src="Imagenes/Grúa de construccion.WEBP" alt="Grúa">
+          <img src="imagenes/grua-de-construccion.webp" alt="Grúa">
         </div>
         <div class="producto-info">
           <h3>Grúa</h3>
@@ -145,25 +145,19 @@
     </div>
   </footer>
 
-  <!-- Agregar Font Awesome si no existe -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yFk4TDdVNEcA+u8G99YzN4Ds1QjD3g5nN4h4sk5ZhRPNnJgRfFeqjvLt1QGH6LR4NqCbb69d1NBBZ5gRmQ9lXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/50279648600?text=Hola%2C%20me%20gustaría%20recibir%20más%20información%20sobre%20sus%20productos" 
-   class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-</a>
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/50279648600?text=Hola%2C%20me%20gustaría%20recibir%20más%20información%20sobre%20sus%20productos" 
+     class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+  </a>
 
   <script>
-    // Funcionalidad del menú móvil
     document.addEventListener('DOMContentLoaded', function() {
       const menuToggle = document.getElementById('menuToggle');
       const navMenu = document.getElementById('navMenu');
       
       menuToggle.addEventListener('click', function() {
         navMenu.classList.toggle('active');
-        
-        // Cambiar ícono
         const icon = menuToggle.querySelector('i');
         if (navMenu.classList.contains('active')) {
           icon.classList.remove('fa-bars');
@@ -173,8 +167,7 @@
           icon.classList.add('fa-bars');
         }
       });
-      
-      // Cerrar menú al hacer clic en un enlace (solo en móviles)
+
       if (window.innerWidth <= 768) {
         const navLinks = navMenu.querySelectorAll('a');
         navLinks.forEach(link => {
