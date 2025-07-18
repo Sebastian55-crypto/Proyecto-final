@@ -24,8 +24,8 @@
         }
     </style>
 
-    <!-- Enlace a Font Awesome para el ícono (opcional) -->
-    <link rel="stylesheet" href="file:///C:/Users/Samy/Downloads/Proyecto%20Final%20Tics/index.html">
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -36,29 +36,24 @@ document.addEventListener('DOMContentLoaded', function() {
     menuToggle.addEventListener('click', function() {
       nav.classList.toggle('active');
     });
-    
-    // Cerrar menú al hacer clic en un enlace
+
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('active');
       });
     });
-    
-    // Ocultar header al hacer scroll hacia abajo
+
     let lastScrollY = window.scrollY;
     const header = document.querySelector('header');
     
     window.addEventListener('scroll', () => {
       if (window.scrollY > lastScrollY) {
-        // Scroll hacia abajo
         header.classList.add('hide');
       } else {
-        // Scroll hacia arriba
         header.classList.remove('hide');
       }
-      
-      // Si está en la parte superior, mostrar siempre
+
       if (window.scrollY < 50) {
         header.classList.remove('hide');
       }
@@ -70,10 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <body>
 
-    <!-- Contenido de tu página -->
-
     <!-- Botón flotante de WhatsApp -->
-    <a href="https://api.whatsapp.com/send/?phone=56231767" 
+    <a href="https://api.whatsapp.com/send/?phone=50212345678" 
        class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
